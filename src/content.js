@@ -1,4 +1,4 @@
-const targetDiv = document.querySelectorAll(".Box-body")[1];
+const targetDiv = document.querySelectorAll(".Box")[1];
 
 if (targetDiv) {
   const toggleDivVisibility = () => {
