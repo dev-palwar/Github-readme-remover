@@ -13,6 +13,12 @@ if (targetDiv) {
     // handling click event
     toggleButton.addEventListener("click", toggleDivVisibility);
     function toggleDivVisibility() {
-        targetDiv.style.display = targetDiv.style.display === "none" ? "block" : "none";
+        targetDiv.style.display =
+            targetDiv.style.display === "none" ? "block" : "none";
+        targetDiv.style.display =
+            targetDiv.style.display === "none"
+                ? (toggleButton.textContent = "Show readme")
+                : toggleButton.textContent = "Remove readme";
+        ;
     }
 }
